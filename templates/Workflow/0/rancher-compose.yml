@@ -1,0 +1,4 @@
+.catalog:
+  name: "Workflow"
+  version: "v1"
+  description: "Workflow"

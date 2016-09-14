@@ -2,3 +2,9 @@
   name: "Workflow"
   version: "v1"
   description: "Workflow"
+  questions: 
+    - variable: "DEV_NAME"
+      description: "Please enter your name"
+      required: "true"
+      type: "string"
+      default: "devA"

@@ -1,0 +1,17 @@
+Workflow:
+  labels:
+    io.rancher.container.pull_image: always
+  tty: true
+  image: caas.vinadata.vn:5000/sdk/tomcat7-activiti:auto-reload
+  volumes:
+  - /home/truongnx7/test/source:/apache-tomcat-7.0.70-activiti/webapps
+db:
+  environment:
+    MYSQL_DATABASE: activiti
+    MYSQL_ROOT_PASSWORD: '123456'
+  labels:
+    io.rancher.container.pull_image: always
+  tty: true
+  image: mariadb
+  volumes:
+  - /home/truongnx7/test/db:/var/lib/mysql
